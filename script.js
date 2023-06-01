@@ -17,7 +17,7 @@ function generateMixed(n) {
 }
 
 function clickonbody() {
-    var text = "This is my proof of @gg_kokonut 🥥%0a%0a"
+    var text = "This is my proof of @kokonuts_gg 🥥%0a%0a"
     var hash = "0x" + generateMixed(20);
     window.location.href = "https://twitter.com/intent/tweet?&text=\n" + text + hash
 }
