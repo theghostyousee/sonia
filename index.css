@@ -13,6 +13,7 @@
 :root {
   --res: calc(0.1 * 1vmin);
 }
+
 button {
   cursor: pointer;
 }
@@ -20,17 +21,22 @@ button {
 img:hover {
   cursor: pointer;
 }
+
 body {
   height: 100vh;
   overflow: hidden;
   width: 100%;
   display: flex;
-  color: white;
+  color: rgb(37, 1, 1);
   align-items: center;
   flex-direction: column;
-  background-color: #141D26;
+  background-color: #FEFB00;
   justify-content: center;
   position: relative;
+}
+
+h1 {
+  padding-left: 20px;
 }
 
 body:after {
@@ -43,7 +49,32 @@ body:after {
   z-index: -1;
 }
 
-h1{
-    font-family: 'VT323', monospace;
+h1 {
+  font-family: 'VT323', monospace;
 
+}
+
+#muerto {
+  width: 100px;
+  position: relative;
+  /* Add this to ensure the animation stays within the element */
+  animation: bounce 0.5s infinite alternate;
+  /* Apply the animation */
+  transition: transform 0.2s ease-in-out;
+}
+
+/* Define the keyframes animation */
+@keyframes bounce {
+  from {
+      transform: translateX(0); /* Starting position */
+  }
+  to {
+      transform: translateX(-10px); /* Ending position (adjust as needed) */
+  }
+}
+
+/* Add hover effect to stop animation temporarily */
+#muerto:hover {
+  animation-play-state: paused;
+  transform: translateX(0); /* Reset position on hover */
 }
