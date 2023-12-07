@@ -27,12 +27,26 @@ body {
   overflow: hidden;
   width: 100%;
   display: flex;
-  color: rgb(37, 1, 1);
+  color: #ffffff;
   align-items: center;
   flex-direction: column;
-  background-color: #FEFB00;
+  background-color: #062870;
+  background-image: url('bg.gif');
+  background-repeat: no-repeat;
+  background-size: cover;
   justify-content: center;
   position: relative;
+}
+
+body:after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(29, 85, 154, 0.91); 
+  z-index: -1;
 }
 
 h1 {
