@@ -27,31 +27,25 @@ body {
   overflow: hidden;
   width: 100%;
   display: flex;
-  color: #ffffff;
+  color: #f2f2f2;
   align-items: center;
   flex-direction: column;
-  background-color: #062870;
-  background-image: url('bg.gif');
+  background-image: url('pk.png');
   background-repeat: no-repeat;
   background-size: cover;
   justify-content: center;
   position: relative;
 }
 
-body:after {
-  content: "";
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(29, 85, 154, 0.91); 
-  z-index: -1;
-}
 
 h1 {
   padding-left: 20px;
+  font-weight: bold;
+  font-size: 40px;
+  color: rgb(15, 14, 14);
+
 }
+
 
 body:after {
   content: "";
